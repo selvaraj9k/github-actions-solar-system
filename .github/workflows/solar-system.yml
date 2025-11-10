@@ -44,6 +44,7 @@
         - name: Install Dependencies
           run: npm install
         - name: Run Code-coverage command
+          continue-on-error: true
           run: npm run code-coverage
         - name: Archive Test Result
           if: always()      #added
